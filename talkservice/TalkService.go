@@ -22461,7 +22461,7 @@ type Message struct {
 	DeliveredTime int64  `thrift:"deliveredTime,6" db:"deliveredTime" json:"deliveredTime"`
 	// unused fields # 7 to 9
 	Text     string    `thrift:"text,10" db:"text" json:"text"`
-	Location *Location `thrift:"location,11" db:"location" json:"location"`
+	Location *Location `thrift:"location,11" db:"location" json:"location,omitempty"`
 	// unused fields # 12 to 13
 	HasContent  bool        `thrift:"hasContent,14" db:"hasContent" json:"hasContent"`
 	ContentType ContentType `thrift:"contentType,15" db:"contentType" json:"contentType"`
